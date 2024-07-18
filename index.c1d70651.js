@@ -1,0 +1,2 @@
+document.querySelectorAll("[data-carousel-button]").forEach(e=>{e.addEventListener("click",()=>{let t="next"===e.dataset.carouselButton?1:-1,a=e.closest("[data-carousel]").querySelector("[data-slides]"),l=a.querySelector("[data-active]"),c=[...a.children].indexOf(l)+t;c<0&&(c=a.children.length-1),c>=a.children.length&&(c=0),a.children[c].dataset.active=!0,delete l.dataset.active})});
+//# sourceMappingURL=index.c1d70651.js.map
